@@ -1,0 +1,313 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #e4eddf;
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 35px 15px;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 520px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    margin-bottom: 25px;
+    color: #54745b;
+}
+
+.small-title {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #849c83;
+    font-style: italic;
+}
+
+.confession-card {
+    background: #f8faf5;
+    padding: 25px;
+    border: 1px solid #bdceb6;
+    border-radius: 25px;
+    box-shadow: 0 12px 30px #718c7130;
+
+    .photo-frame {
+    width: 464px;
+    height: 464px;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.placeholder {
+    color: #829c7d;
+}
+
+.placeholder span {
+    font-size: 55px;
+}
+
+.placeholder p {
+    font-size: 17px;
+    margin: 10px;
+}
+
+.placeholder small {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+.upload-btn {
+    margin: 18px 0;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #829e7d;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-btn:hover {
+    background: #648365;
+    transform: translateY(-3px);
+}
+
+.message-area {
+    background: #edf3e9;
+    border-radius: 18px;
+    padding: 22px 17px;
+    margin-top: 5px;
+}
+
+.message-area h2 {
+    color: #65836a;
+    font-weight: normal;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 130px;
+    resize: vertical;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    color: #607961;
+    line-height: 1.8;
+}
+
+textarea::placeholder {
+    color: #a2b39c;
+    font-style: italic;
+}
+
+.signature {
+    color: #829b7e;
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 22px;
+    color: #789477;
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* Decorative flowers and hearts */
+
+.decoration {
+    position: fixed;
+    color: #89a982;
+    opacity: 0.65;
+    pointer-events: none;
+    animation: float 4s ease-in-out infinite;
+}
+
+.hearts {
+    top: 8%;
+    left: 8%;
+    font-size: 65px;
+}
+
+.flower {
+    top: 15%;
+    right: 10%;
+    font-size: 55px;
+}
+
+.heart2 {
+    bottom: 12%;
+    right: 8%;
+    font-size: 60px;
+}
+
+.flower2 {
+    bottom: 10%;
+    left: 9%;
+    font-size: 60px;
+}
+
+.heart3 {
+    top: 50%;
+    right: 3%;
+    font-size: 35px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .confession-card {
+        padding: 16px;
+    }
+
+    .decoration {
+        opacity: 0.35;
+    }
+}
+
+.message-area {
+    display: block;
+    width: 100%;
+    min-height: 180px;
+    background: #edf3e9;
+    border-radius: 18px;
+    padding: 22px 17px;
+    margin-top: 15px;
+}
+
+.message-area h2 {
+    display: block;
+    color: #65836a;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.message-area textarea {
+    display: block;
+    width: 100%;
+    min-height: 130px;
+    color: #607961;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: vertical;
+    text-align: center;
+}
+
+/* OPENING SCREEN */
+
+.opening-screen {
+    position: fixed;
+    inset: 0;
+    background: #e4eddf;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    transition: opacity 0.8s ease;
+}
+
+.envelope {
+    font-size: 100px;
+    margin-bottom: 20px;
+    animation: float 2s infinite ease-in-out;
+}
+
+.opening-screen h1 {
+    color: #54745b;
+    font-size: 30px;
+}
+
+.opening-screen p {
+    color: #829b7e;
+    margin: 15px 0 25px;
+    font-size: 14px;
+}
+
+.opening-screen button {
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background: #829e7d;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.opening-screen button:hover {
+    background: #648365;
+    transform: scale(1.05);
+}
+
+.opening-screen small {
+    color: #829b7e;
+    margin-top: 25px;
+}
+
+.opening-screen.hide {
+    opacity: 0;
+    pointer-events: none;
+}
